@@ -1,0 +1,15 @@
+{
+  "name": "Receitas Pra Secar",
+  "short_name": "Pra Secar",
+  "description": "Seu planejador de refeições saudáveis: receitas, planner semanal, lista de compras e diário alimentar.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FAF6EF",
+  "theme_color": "#2E5B3E",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}
