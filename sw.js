@@ -1,9 +1,9 @@
 // Service worker — cache para funcionar offline
-const CACHE = "rps-v5";
+const CACHE = "rps-v6";
 const ASSETS = [
   "./", "index.html",
   "styles.css?v=4", "app.js?v=4",
-  "data/recipes.js?v=4", "data/bonus.js?v=4", "data/foods.js?v=4", "data/images.js?v=5",
+  "data/recipes.js?v=4", "data/bonus.js?v=4", "data/foods.js?v=4", "data/images.js?v=6",
   "manifest.webmanifest", "icon.svg", "icon-192.png", "icon-512.png", "icon-180.png",
 ];
 
