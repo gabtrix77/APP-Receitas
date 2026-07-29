@@ -7,7 +7,7 @@ const BONUS = [
   { id:"bn2", nome:"Marmitas Congeladas", emoji:"🧊", desc:"Cozinhe 1x, coma a semana toda", valor:"R$ 47" },
   { id:"bn3", nome:"Snacks de Airfryer", emoji:"🍟", desc:"Beliscar sem sair da dieta", valor:"R$ 29" },
   { id:"bn4", nome:"Sobremesas Sem Açúcar", emoji:"🍮", desc:"Doces que não sabotam", valor:"R$ 39" },
-  { id:"bn5", nome:"Receitas Anti-inflamatórias", emoji:"🫚", desc:"Desincha e dá energia", valor:"R$ 29" },
+  { id:"bn5", nome:"Receitas Leves & Funcionais", emoji:"🫚", desc:"Pratos leves com temperos naturais", valor:"R$ 29" },
   { id:"bn6", nome:"Sem Glúten & Sem Lactose", emoji:"🌾", desc:"Para quem tem restrição", valor:"R$ 29" },
   { id:"bn7", nome:"Cafés da Manhã Extras", emoji:"☕", desc:"Nunca mais repita o café", valor:"R$ 24" },
   { id:"bn8", nome:"Sorvetes Artesanais", emoji:"🍨", desc:"Geladinhos fit em casa", valor:"R$ 24" },
@@ -92,17 +92,17 @@ const BONUS_RECEITAS = [
 
 // ---- BN5: ANTI-INFLAMATÓRIAS ----
 { id:"x51", bonus:"bn5", nome:"Golden milk (leite dourado)", emoji:"🥛", tempo:8, porcoes:1, kcal:90, prot:4, carb:9, gord:4, dif:"Fácil",
-  ing:["1 xícara de leite ou bebida vegetal","1/2 colher (chá) de cúrcuma","1 pitada de pimenta-do-reino (ativa a cúrcuma)","Canela e gengibre","Mel (opcional)"],
-  passos:["Aqueça o leite com todos os temperos sem ferver.","Mexa bem e tome morno, de preferência à noite.","A pimenta é obrigatória: sem ela a cúrcuma não é absorvida."] },
+  ing:["1 xícara de leite ou bebida vegetal","1/2 colher (chá) de cúrcuma","1 pitada de pimenta-do-reino","Canela e gengibre","Mel (opcional)"],
+  passos:["Aqueça o leite com todos os temperos sem ferver.","Mexa bem e tome morno, de preferência à noite.","A pimenta-do-reino é tradicionalmente combinada com a cúrcuma nessa bebida."] },
 { id:"x52", bonus:"bn5", nome:"Salmão com cúrcuma e legumes verdes", emoji:"🐟", tempo:25, porcoes:2, kcal:340, prot:33, carb:9, gord:19, dif:"Fácil",
   ing:["2 filés de salmão","1 colher (chá) de cúrcuma","Suco de 1 limão","Brócolis e vagem no vapor","Azeite, sal e pimenta"],
-  passos:["Tempere o salmão com cúrcuma, limão, sal e pimenta.","Airfryer 180 °C por 12 minutos.","Sirva com os verdes no vapor regados com azeite.","Ômega-3 + cúrcuma: dupla anti-inflamatória."] },
+  passos:["Tempere o salmão com cúrcuma, limão, sal e pimenta.","Airfryer 180 °C por 12 minutos.","Sirva com os verdes no vapor regados com azeite.","Prato leve, colorido e cheio de sabor."] },
 { id:"x53", bonus:"bn5", nome:"Sopa de gengibre com cenoura", emoji:"🥕", tempo:30, porcoes:4, kcal:100, prot:2, carb:16, gord:3, dif:"Fácil",
   ing:["4 cenouras","1 colher (sopa) de gengibre ralado","1 cebola","600 ml de caldo caseiro","Azeite, sal e pimenta"],
   passos:["Refogue a cebola, junte cenoura e gengibre.","Cubra com caldo e cozinhe 20 minutos.","Bata até ficar aveludado e ajuste o sal."] },
 { id:"x54", bonus:"bn5", nome:"Salada de folhas escuras com azeite e limão", emoji:"🥗", tempo:10, porcoes:2, kcal:120, prot:3, carb:8, gord:9, dif:"Fácil",
   ing:["Rúcula, espinafre e agrião","1/4 de abacate","1 colher (sopa) de sementes de abóbora","Azeite extravirgem, limão e sal"],
-  passos:["Monte as folhas com o abacate em fatias.","Finalize com as sementes, azeite e limão.","Folhas escuras + gorduras boas = combinação que desincha."] },
+  passos:["Monte as folhas com o abacate em fatias.","Finalize com as sementes, azeite e limão.","Combinação fresca de folhas escuras com gorduras boas."] },
 { id:"x55", bonus:"bn5", nome:"Chá de gengibre com limão e cúrcuma", emoji:"🫖", tempo:10, porcoes:2, kcal:15, prot:0, carb:3, gord:0, dif:"Fácil",
   ing:["3 rodelas de gengibre fresco","1/2 colher (chá) de cúrcuma","Suco de 1/2 limão","500 ml de água","1 pitada de pimenta-do-reino"],
   passos:["Ferva a água com o gengibre e a cúrcuma por 5 minutos.","Desligue, junte o limão e a pimenta.","Tome morno ao acordar ou após refeições pesadas."] },
@@ -140,6 +140,10 @@ const BONUS_RECEITAS = [
 { id:"x75", bonus:"bn7", nome:"Vitamina verde de manga", emoji:"🥭", tempo:5, porcoes:1, kcal:170, prot:5, carb:35, gord:2, dif:"Fácil",
   ing:["1/2 manga","1 folha de couve","200 ml de água de coco","1 colher (chá) de chia"],
   passos:["Bata tudo no liquidificador.","A manga esconde totalmente o gosto da couve.","Ótimo para quem 'não consegue' comer verde de manhã."] },
+
+{ id:"x76", bonus:"bn7", nome:"Iogurte com chia e frutas vermelhas", emoji:"🫐", tempo:5, porcoes:1, kcal:180, prot:10, carb:22, gord:6, dif:"Fácil",
+  ing:["1 pote de iogurte natural","1 colher (chá) de chia","1/2 xícara de frutas vermelhas (morango, mirtilo, framboesa)","1 colher (sopa) de amêndoas picadas"],
+  passos:["Coloque o iogurte em uma tigela e polvilhe a chia.","Cubra com as frutas e as amêndoas.","Se preferir mais doce, um fio de mel resolve.","Pronto em 5 minutos — sem fogão."] },
 
 // ---- BN8: SORVETES ----
 { id:"x81", bonus:"bn8", nome:"Sorvete de morango com iogurte (2 ingredientes)", emoji:"🍓", tempo:5, porcoes:3, kcal:90, prot:5, carb:15, gord:1, dif:"Fácil",

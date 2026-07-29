@@ -1,13 +1,18 @@
-// Service worker — cache básico para funcionar offline
-const CACHE = "rps-v2";
+// Service worker — cache para funcionar offline
+const CACHE = "rps-v5";
 const ASSETS = [
-  "./", "index.html", "styles.css", "app.js",
-  "data/recipes.js", "data/bonus.js", "data/foods.js",
-  "manifest.webmanifest", "icon.svg",
+  "./", "index.html",
+  "styles.css?v=4", "app.js?v=4",
+  "data/recipes.js?v=4", "data/bonus.js?v=4", "data/foods.js?v=4", "data/images.js?v=5",
+  "manifest.webmanifest", "icon.svg", "icon-192.png", "icon-512.png", "icon-180.png",
 ];
 
 self.addEventListener("install", e => {
-  e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
+  e.waitUntil(
+    caches.open(CACHE)
+      .then(c => Promise.allSettled(ASSETS.map(a => c.add(a))))
+      .then(() => self.skipWaiting())
+  );
 });
 
 self.addEventListener("activate", e => {
@@ -19,11 +24,11 @@ self.addEventListener("activate", e => {
 
 // network-first para HTML (pega atualizações), cache-first para o resto
 self.addEventListener("fetch", e => {
-  if (e.request.method !== "GET") return;
+  if (e.request.method !== "GET" || !e.request.url.startsWith(self.location.origin)) return;
   const isHTML = e.request.mode === "navigate";
   e.respondWith(
     isHTML
       ? fetch(e.request).then(r => { const cl = r.clone(); caches.open(CACHE).then(c => c.put(e.request, cl)); return r; }).catch(() => caches.match(e.request).then(r => r || caches.match("./")))
-      : caches.match(e.request).then(r => r || fetch(e.request).then(res => { const cl = res.clone(); caches.open(CACHE).then(c => c.put(e.request, cl)); return res; }))
+      : caches.match(e.request).then(r => r || fetch(e.request).then(res => { if (res.ok) { const cl = res.clone(); caches.open(CACHE).then(c => c.put(e.request, cl)); } return res; }))
   );
 });

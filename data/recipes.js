@@ -52,6 +52,13 @@ const RECEITAS = [
   ing:["600 g de batata-doce cozida","400 g de frango desfiado","1 cebola picada","2 colheres (sopa) de molho de tomate","2 colheres (sopa) de requeijão light","Queijo minas padrão ralado para gratinar","Sal, alho e cheiro-verde"],
   passos:["Amasse a batata-doce com sal e o requeijão até virar um purê.","Refogue cebola e alho, junte o frango e o molho de tomate.","Monte em um refratário: frango embaixo, purê por cima, queijo ralado no topo.","Forno 200 °C por 20 minutos até gratinar. Congela em porções por até 3 meses."] },
 
+{ id:"c6", nome:"Torrada com ovo e abacate", cat:"cafe", emoji:"🥑", tempo:10, porcoes:1, kcal:280, prot:12, carb:22, gord:16, dif:"Fácil", tags:["rapida"],
+  ing:["1 fatia de pão integral tostado","1 ovo cozido em fatias","1 colher (sopa) de requeijão light","1/4 de abacate em fatias","Sal, pimenta e um fio de azeite"],
+  passos:["Cozinhe o ovo por 8–9 minutos (gema cremosa) e fatie.","Passe o requeijão na torrada e acomode o ovo por cima.","Sirva com o abacate ao lado, temperado com sal e pimenta.","Café da manhã completo: carboidrato, proteína e gordura boa no mesmo prato."] },
+{ id:"a6", nome:"Macarrão integral com frango e legumes", cat:"almoco", emoji:"🍝", tempo:25, porcoes:3, kcal:380, prot:28, carb:46, gord:9, dif:"Fácil", tags:["familia","marmita"],
+  ing:["240 g de macarrão integral (tipo talharim ou penne)","300 g de frango em cubos","1 xícara de brócolis em floretes","1/2 cenoura em cubos pequenos","1/2 pimentão vermelho em tiras","2 colheres (sopa) de milho","2 dentes de alho","Azeite, sal e pimenta"],
+  passos:["Cozinhe o macarrão al dente conforme a embalagem; reserve 1/2 xícara da água.","Doure o frango temperado no azeite; junte o alho e os legumes.","Refogue 5 minutos, adicione o macarrão e a água reservada.","Misture bem em fogo alto por 1 minuto e sirva."] },
+
 // ---------- LANCHES ----------
 { id:"l1", nome:"Chips de batata-doce na airfryer", cat:"lanches", emoji:"🍟", tempo:20, porcoes:2, kcal:130, prot:2, carb:27, gord:2, dif:"Fácil", tags:["airfryer"],
   ing:["1 batata-doce média","1 fio de azeite","Sal e páprica defumada a gosto"],
@@ -157,13 +164,13 @@ const RECEITAS = [
 // ---------- SUCOS DETOX ----------
 { id:"d1", nome:"Suco verde clássico", cat:"detox", emoji:"🥬", tempo:5, porcoes:1, kcal:90, prot:2, carb:20, gord:0, dif:"Fácil", tags:["rapida"],
   ing:["1 folha de couve","1/2 maçã","Suco de 1 limão","1 pedaço pequeno de gengibre","200 ml de água de coco (ou água)"],
-  passos:["Bata tudo no liquidificador.","Coe se preferir mais leve (ou tome com as fibras, melhor opção).","Tome na hora, de preferência em jejum ou antes do almoço."] },
+  passos:["Bata tudo no liquidificador.","Coe se preferir mais leve — ou tome com as fibras.","Tome na hora, fresquinho."] },
 { id:"d2", nome:"Suco de abacaxi com hortelã", cat:"detox", emoji:"🍍", tempo:5, porcoes:2, kcal:80, prot:1, carb:19, gord:0, dif:"Fácil", tags:["rapida"],
   ing:["2 fatias grossas de abacaxi","10 folhas de hortelã","300 ml de água gelada","Gelo a gosto"],
-  passos:["Bata o abacaxi com a água e a hortelã.","Sirva com gelo, sem coar.","Digestivo, refrescante e sem açúcar nenhum."] },
+  passos:["Bata o abacaxi com a água e a hortelã.","Sirva com gelo, sem coar.","Refrescante e sem açúcar adicionado."] },
 { id:"d3", nome:"Suco rosa (beterraba e laranja)", cat:"detox", emoji:"🌹", tempo:5, porcoes:2, kcal:95, prot:2, carb:21, gord:0, dif:"Fácil", tags:["rapida"],
   ing:["1/2 beterraba crua pequena","Suco de 2 laranjas","1 pedaço de gengibre","150 ml de água gelada"],
-  passos:["Bata tudo no liquidificador até ficar liso.","Coe se a textura incomodar.","Ótimo pré-treino natural."] },
+  passos:["Bata tudo no liquidificador até ficar liso.","Coe se a textura incomodar.","Cor vibrante e sabor doce natural da laranja."] },
 { id:"d4", nome:"Suco de melancia com limão e gengibre", cat:"detox", emoji:"🍉", tempo:5, porcoes:2, kcal:70, prot:1, carb:17, gord:0, dif:"Fácil", tags:["rapida"],
   ing:["2 xícaras de melancia em cubos","Suco de 1 limão","1 lasca de gengibre","Gelo"],
   passos:["Bata a melancia com o limão e o gengibre.","Não precisa de água — a melancia rende sozinha.","Sirva bem gelado."] },
