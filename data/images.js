@@ -20,10 +20,10 @@ const IMAGENS = new Set([
   "lc1", "lc2", "lc3", "lc4", "lc5",
   // Marinadas
   "m1", "m2", "m3", "m4", "m5",
-  // Versáteis (faltam: v1, v2)
-  "v3", "v4", "v5",
-  // Bowls (falta: b5)
-  "b1", "b2", "b3", "b4",
+  // Versáteis
+  "v1", "v2", "v3", "v4", "v5",
+  // Bowls
+  "b1", "b2", "b3", "b4", "b5",
   // Sucos detox
   "d1", "d2", "d3", "d4", "d5",
   // Sobremesas
